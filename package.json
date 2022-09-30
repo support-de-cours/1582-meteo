@@ -1,0 +1,19 @@
+{
+  "name": "meteo",
+  "version": "1.0.0",
+  "description": "App Meteo NodeJS et Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/support-de-cours/1582-meteo.git"
+  },
+  "author": "Arnaud <contact@osw3.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/support-de-cours/1582-meteo/issues"
+  },
+  "homepage": "https://github.com/support-de-cours/1582-meteo#readme"
+}
