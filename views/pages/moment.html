@@ -1,0 +1,27 @@
+<%- include('../layout/header.html') -%>
+
+<div class="temperature">
+    <span class="temperature_value"><%= temperature %></span>
+    <span class="temperature_unit"><%= temperatureUnit %></span>
+</div>
+
+<div class="weather">
+    <div><%- icon %></div>
+    <div><%= description %></div>
+</div>
+
+<div class="wind">
+    <span class="wind_direction" style="rotate: <%= winddirection %>deg" data-direction="<%= winddirection %>">⭣</span>
+    <span class="wind_speed"><%= windspeed %></span>
+    <span class="wind_unit"><%= windspeedUnit %></span>
+</div>
+
+<div>
+    <strong>User IP : </strong> <%= ip %>
+</div>
+
+<div>
+    <strong>User Location : </strong> <%= city %>, <%= country %>
+</div>
+
+<%- include('../layout/footer.html') -%>

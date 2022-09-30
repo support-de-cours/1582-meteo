@@ -1,0 +1,199 @@
+@import url(../fonts/Roboto/Roboto-Regular.ttf);
+
+:root {
+    --main-color: #FFFFFF;
+}
+/* Common classes */
+
+* {
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+
+    /* overflow: hidden; */
+}
+
+.container {
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+
+/* Background */
+.bg-image {
+    position: fixed;
+    /* top: -50px; */
+    right: -50px;
+    /* bottom: -50px; */
+    left: -50px;
+    height: 100vh;
+    z-index: 1;
+
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.3), 
+            rgba(0, 0, 0, 0.3)
+        ),
+        url(../images/background-1.jpg)
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+
+
+/* Main Header */
+.main-header {
+    /* background-color: darkgoldenrod; */
+    padding: 1rem;
+    z-index: 2;
+}
+.main-header nav {
+    display: flex;
+    justify-content: space-around;
+}
+.main-header nav a {
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.main-header nav a:hover,
+.main-header nav a.active
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Main Footer */
+.main-footer {
+    /* background-color: rgb(56, 152, 8); */
+    padding: 1rem;
+    z-index: 2;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-weight: 200;
+    font-size: 80%;
+}
+
+/* Content */
+.main-content {
+    /* background-color: rgb(166, 177, 187); */
+    padding: 1rem;
+    z-index: 2;
+
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+}
+.page-content {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.page-content > div {
+    text-align: center;
+}
+
+
+.temperature {
+    padding: 3rem;
+}
+.temperature_value {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.temperature_unit {
+    font-size: 2rem;
+}
+
+
+.wind {
+    padding: 3rem;
+}
+.wind_direction {
+    display: inline-block;
+    font-size: 2rem;
+}
+.wind_speed {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.wind_unit {
+    font-size: 1rem;
+}
+
+
+svg {
+    width: 180px;
+    fill: var(--main-color);
+}
+
+
+.hourly {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: all .3s;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+}
+.hourly:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hourly > div {
+    display: inline-block;
+    text-align: center;
+}
+
+.hourly__hour {
+    text-transform: uppercase;
+    width: 15%;
+}
+.hourly__code {
+    width: 10%;
+}
+.hourly__temperature {
+    width: 25%;
+}
+.hourly__wind {
+    width: 25%;
+}
+.hourly__humidity {
+    width: 15%;
+}
+
+
+
+.error {
+    margin: 4rem;
+    padding: 2rem;
+    background-color: #b50606;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+}

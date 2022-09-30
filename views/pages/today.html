@@ -1,0 +1,13 @@
+<%- include('../layout/header.html') -%>
+
+<% for (let item of data) { %>
+    <div class="hourly">
+        <div class="hourly__hour"><%= item.hour %>h</div>
+        <div class="hourly__code"><%= item.code %></div>
+        <div class="hourly__temperature"><%= item.temperature %> <%= item.temperatureUnit %></div>
+        <div class="hourly__wind"><%= item.wind %> <%= item.windUnit %></div>
+        <div class="hourly__humidity"><%= item.humidity %> <%= item.humidityUnit %></div>
+    </div>
+<% } %>
+
+<%- include('../layout/footer.html') -%>

@@ -1,0 +1,29 @@
+Objectifs
+========================
+
+Créer une application Météo.
+Sur la premiere page, Afficher la météo du moment.
+Créer une seconde page pour afficher la météo du jour
+Créer une troisieme page pour afficher la météo du lendemain
+
+
+
+Objectifs Avancé
+========================
+
+L'application envois une notification au systeme d'exploitation lors d'un changement d'état de la météo du moment
+Mettre une icone personnalisé pour l'application
+
+
+
+Les sources
+========================
+
+IP
+url : http://api.my-ip.io/ip
+
+Geolocalisation
+url : http://ip-api.com/json/${ip}
+
+Weather
+url : https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,windspeed_10m
