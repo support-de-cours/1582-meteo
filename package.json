@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron .",
     "serve": "nodemon server.js",
+    "build": "electron-builder build --mac --win --x64",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
